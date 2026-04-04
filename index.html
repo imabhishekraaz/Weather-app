@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="w-screen flex flex-col justify-center items-center">
+    <section class="flex flex-col gap-5  text-center w-[30%] rounded-2xl  shadow-[0px_0px_40px_pink] mt-40 p-10">
+        <div class="flex justify-center align-middle">
+            <h1 class="text-4xl">Weather App</h1>
+            <img class="size-[50px]" src="./Images/weather app img.png" alt="">
+        </div>
+        <div class="flex gap-8">
+            <input id="input-box" class="shadow-[0px_0px_20px_pink] p-[5px] rounded border focus:border-2 border-pink-600 outline-none" type="text" placeholder="Enter City Name">
+            <input id="Searchbtn" class="bg-pink-600 rounded px-4 text-white hover:cursor-pointer" type="button"  value="Search">
+        </div>
+        <div class="bg-amber-500 rounded text-center flex justify-center items-center">
+            <input id="CurrentLocationBtn" class="px-4 py-1 hover:cursor-pointer" type="button" value="Current Location 🌍">
+        </div>
+        <div id="container">
+            
+        </div>
+        
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+</html>
+
