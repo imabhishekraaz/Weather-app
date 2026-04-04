@@ -41,6 +41,7 @@ function locationDetails(data){
     //call the function to insert the HTML in web page
     updateDetails(resCityName,resCountryName,resRegionName,resTemp,resWeatherIcon,resWeatherText);
 }
+// add the details in webpage
 function updateDetails(cityName,countryName,regionName,temp,icon,WeatherText){
     container.innerHTML = `
         <div id="location-details" class="w-full h-50 rounded shadow-[0px_0px_10px_black] bg-amber-500 p-5">
@@ -53,6 +54,7 @@ function updateDetails(cityName,countryName,regionName,temp,icon,WeatherText){
             <h1>${WeatherText}</h1>
         </div>
     `
+    inputBox.value = "";
 }
 
 
