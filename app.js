@@ -22,7 +22,7 @@ Searchbtn.addEventListener("click",()=>{
 //get the Location details by calling the API
 async function callApi(cityName){
     // Fetch the data form the API
-    const apikey = `http://api.weatherapi.com/v1/current.json?key=d565ab22e5bc41b4b8811410251508&q=${cityName}&aqi=no`;
+    const apikey = `https://api.weatherapi.com/v1/current.json?key=d565ab22e5bc41b4b8811410251508&q=${cityName}&aqi=no`;
     const response = await fetch(apikey);
     const data = await response.json();
     locationDetails(data);
