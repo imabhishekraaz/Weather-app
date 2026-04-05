@@ -12,7 +12,7 @@ Searchbtn.addEventListener("click",()=>{
 
     // check user enter the location or not?
     if(!userLocation){
-        alert("Does't Enter the Location");
+        alert("Please! Enter the Location");
     }else{
         callApi(userLocation);
     }
@@ -44,7 +44,9 @@ function locationDetails(data){
 }
 // add the details in webpage
 function updateDetails(cityName,countryName,regionName,temp,icon,WeatherText){
-    container.innerHTML = `
+    container.innerText= "Fetching Data...⌛";
+    setTimeout(()=>{
+       container.innerHTML = `
         <div id="location-details" class="w-full h-50 rounded shadow-[0px_0px_10px_black] bg-amber-500 p-5">
             <h1 class="text-3xl font-[600]">${cityName}</h1>
             <h1>${countryName}, ${regionName}</h1>
@@ -56,11 +58,20 @@ function updateDetails(cityName,countryName,regionName,temp,icon,WeatherText){
         </div>
     `
     inputBox.value = "";
+    },1000)
+    
 }
 
 
 
-
+navigator.geolocation.getCurrentPosition((position) => {
+    const lat = position.coords.latitude;
+    const lon = position.coords.longitude;
+    console.log(lat);
+    console.log(lon);
+    
+//   fetchWeatherByCoords(lat, lon);
+});
 
 
 

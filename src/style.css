@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+
+/* .change-width {
+    
+    @apply  @media(width<=720px) {
+            width:100%;
+        }
+    
+} */
