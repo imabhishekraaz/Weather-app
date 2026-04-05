@@ -47,7 +47,7 @@ function updateDetails(cityName,countryName,regionName,temp,icon,WeatherText){
     container.innerText= "Fetching Data...⌛";
     setTimeout(()=>{
        container.innerHTML = `
-        <div id="location-details" class="w-full h-50 rounded shadow-[0px_0px_10px_black] bg-amber-500 p-5">
+        <div id="location-details" class="w-full h-50 rounded shadow-[0px_0px_10px_black] bg-amber-500 p-2">
             <h1 class="text-3xl font-[600]">${cityName}</h1>
             <h1>${countryName}, ${regionName}</h1>
             <h1 class="text-3xl font-[600]">${temp}°C</h1>
