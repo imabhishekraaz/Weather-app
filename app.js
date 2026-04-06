@@ -30,7 +30,7 @@ async function callApi(cityName){
 }
 // Get the Location,temprature,country name,city name etc.
 function locationDetails(data){
-    
+   //get the data from the api 
     const resCityName = data.location.name;
     const resCountryName = data.location.country;
     const resRegionName = data.location.region;
